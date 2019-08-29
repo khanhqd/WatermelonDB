@@ -15,7 +15,10 @@ Pod::Spec.new do |s|
   s.preserve_paths  = "**/*.js"
   s.swift_version   = '4.0'
 
-  s.public_header_files = 'React/RCTBridgeModule.h'
+  # s.public_header_files = 'React/RCTBridgeModule.h'
+  s.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => "\"$(PODS_TARGET_SRCROOT)/React/RCTBridgeModule.h\"" }
+  # s.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => "\"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/boost-for-react-native\" \"$(PODS_ROOT)/DoubleConversion\" \"$(PODS_ROOT)/Folly\"" }
+
   # s.frameworks = 'React'
   # s.vendored_frameworks 
 
