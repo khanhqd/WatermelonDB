@@ -14,6 +14,11 @@ Pod::Spec.new do |s|
   s.source_files    = 'native/ios/WatermelonDB/*.{swift,h}', 'native/ios/WatermelonDB/FMDB/src/fmdb/*.{h,m}'
   s.preserve_paths  = "**/*.js"
   s.swift_version   = '4.0'
+
+  s.public_headers = 'React/RCTBridgeModule.h'
+  # s.frameworks = 'React'
+  # s.vendored_frameworks 
+
   s.dependency 'React'
 
 end
