@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.preserve_paths  = "**/*.js"
   s.swift_version   = '4.0'
 
-  s.public_headers = 'React/RCTBridgeModule.h'
+  s.public_header_files = 'React/RCTBridgeModule.h'
   # s.frameworks = 'React'
   # s.vendored_frameworks 
 
