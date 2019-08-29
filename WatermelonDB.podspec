@@ -9,12 +9,11 @@ Pod::Spec.new do |s|
   s.summary         = "WatermelonDB"
   s.license         = "MIT"
   s.author          = { "Bang Nguyen" => "luongbang152@gmail.com" }
-  s.ios.deployment_target = '7.0'
-  s.tvos.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
   s.source          = { :git => "https://github.com/khanhqd/WatermelonDB.git" }
   s.source_files    = 'native/ios/WatermelonDB/*.{swift,h}', 'native/ios/WatermelonDB/FMDB/src/fmdb/*.{h,m}'
   s.preserve_paths  = "**/*.js"
   s.swift_version   = '4.0'
   s.dependency 'React'
-  
+
 end
