@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.source          = { :git => "https://github.com/khanhqd/WatermelonDB.git" }
   s.source_files    = 'native/ios/WatermelonDB/*.{swift,h}', 'native/ios/WatermelonDB/FMDB/src/fmdb/*.{h,m}'
   s.preserve_paths  = "**/*.js"
-
+  s.swift_version   = '4.0'
 end
